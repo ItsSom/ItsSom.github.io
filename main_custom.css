@@ -1,0 +1,269 @@
+/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation and the spectate text thing) */
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2);
+}
+
+@font-face {
+    font-family: hpammo;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2);
+}
+
+* {
+    text-shadow: 1px black; 
+}
+#aContainer, #aHolder, #endAContainer, #aMerger {
+    display: none!important;
+}
+#youNewDiv, #streamContainer, #ot-sdk-btn-floating.ot-floating-button, #seasonLabel, #editorBtnM, .redditSocial, .discordSocial, .downloadClient, #voiceDisplay, #newsHolder, #termsInfo {
+    display: none !important;
+}
+#mapInfo {
+    color: #8e8e8e !important;
+}
+.button, #signedInHeaderBar, #mLevelCont {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: rgb(0, 0, 0) !important;
+    background-color: transparent !important;
+    box-shadow: inset 0 0 7px rgba(128, 128, 128, 0.384) !important;
+}
+.button:hover {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: #6d6d6d3b !important;
+    background-color: #6d6d6d3b !important;
+    box-shadow: inset 0 0 7px rgb(0, 0, 0) !important;
+}
+.menuItem {
+    background-color: transparent !important;
+}
+.menuItem:hover {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: #8d8d8d !important;
+    background-color: #6d6d6d3b !important;
+    box-shadow: inset 0 0 7px rgb(0, 0, 0) !important;
+}
+.iconProfile, .iconShop, .iconChall, .iconSocial, .iconGames, .iconMods, .iconSettings {
+    filter: brightness(100) !important;
+}
+
+#pingText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: #000000;
+}
+#pingText::after {
+    content: ' ms';
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: #8d8d8d;
+}
+#ingameFPS {
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: #ffffff !important;
+    visibility: visible!important;
+}
+#ingameFPS::after {
+    content: ' fps';
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: #8d8d8d;
+}
+
+#pingDisplay .material-icons {
+    display: none!important;
+}
+#fpsDisplay {
+    visibility: hidden!important;
+}
+#timerIcon, #ammoIcon, #challIcon {
+    display: none !important;
+}
+#ammoDisplay, #healthValueHolder, #reloadMsgs, #headerRight, .headerBarLeft {
+    background-color: transparent !important;
+}
+#headerRight {
+    right: -1% !important;
+}
+#healthBar {
+    width: 325px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    border-radius: 0;
+    background-color: transparent;
+}
+.hpBSeg {
+    border-radius: 0;
+}
+#hudClassIcon {
+    width: 75px !important;
+    height: 75px  !important;
+}
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    filter: brightness(100) drop-shadow(-2px 0px 1px rgb(0, 0, 0)) drop-shadow(0px 0px 1px rgb(0, 0, 0)) drop-shadow(2px 0px 1px #000);
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 70px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+.weapKey {
+    display: none;
+}
+#chatHolder {
+    transition: all 0.4s cubic-bezier(0.43, 0.32, 0.35, 1.32);
+}
+#iconProfile, #iconShop, #iconChall, #iconSocial, #iconGames, #iconMods, #iconSettings, #clientExit {
+    filter: brightness(100) !important;
+}
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/756798771160940597/834062549535817778/assssssssssss.png) !important;
+    transform: scale(0.5) !important;
+    margin-top: 5% !important;
+    transform: rotate(-10deg) !important;
+
+}
+::-webkit-scrollbar {
+    display: none !important;
+}
+#chatInput {
+    background-color: transparent !important;
+}
+#chatInput::placeholder {
+    color: white !important;
+}
+.countIcon {
+    background-color: transparent;
+}   
+#bubbleContainer {
+    display: none !important;
+}
+.serverPing {
+    display:none !important;
+}
+.sliderCent {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a8a8a800;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 34px;
+    pointer-events: all
+}
+.sliderCent:before {
+    position: absolute;
+    content: '\2192';
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    left: 5px;
+    bottom: 2px;
+    background-color: transparent!Important;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    transform: rotateZ(180deg) translateY(-4px) scale(1.5);
+}
+input:checked+.sliderCent:before {
+    -webkit-transform: translateX(3px) translateY(-6px) scale(1.5);
+    -ms-transform: translateX(3px) translateY(-6px) scale(1.5);
+    transform: translateX(3px) translateY(-12px) scale(1.5);
+    background-color: transparent !Important
+}
+.shopCard{
+    transition: font-size 0.25s ease; 
+    text-align: start; 
+    font-size: 0px;
+    border-radius: 9px;
+}
+.shopCard:hover{
+     font-size: 22px;
+}
+.shopCard:hover .spinVal{
+     font-size: 18px;
+}
+.spinVal{
+     text-align: start;
+     font-size: 0px;
+     background: transparent;
+     position: absolute;
+     bottom: -80px;
+     text-indent: 5px;
+     transition-duration: 0.25s;
+}
+.menuItem:hover { 
+    border-left: none;
+}
+#loadingBg {
+    background-image: url(https://cdn.discordapp.com/attachments/795732173667303447/834686393183764486/loading-opaque.gif);
+}
+#uiBase.onMenu #instructions {
+    color:  transparent  !important;
+} 
+#uiBase.onMenu #spectButton {
+    z-index: 1;
+    width: 96px;
+    top: 50%;
+}
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+    color: transparent !important;
+}
+#spectButton .switchsml {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+.sliderSml {
+    opacity: 1;
+}
+.sliderSml::before {
+    content: "Spectate";
+    font-size: 20px;
+    color: white;
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.25s;
+    text-shadow: inset 7px 0 0 #000000
+}
+input:checked+.sliderSml::before {
+    content: "Spectating";
+    transform: translateX(-12px);
+    color: black !important;
+    text-shadow: inset 7px 0 0 #ffffff
+}
+input:checked+.sliderSml {
+    background-color: transparent !important;
+}
+.sliderSml {
+    opacity: 1;
+    background-color: transparent;
+}
