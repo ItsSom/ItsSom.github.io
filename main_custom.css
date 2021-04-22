@@ -252,13 +252,13 @@ input:checked+.sliderCent:before {
     background-color: transparent;
     text-align: center;
     transition-duration: 0.25s;
-    text-shadow: inset 7px 0 0 #000000
+    text-shadow: inset 7px 0 0 #000000 !important;
 }
 input:checked+.sliderSml::before {
     content: "Spectating";
     transform: translateX(-12px);
     color: black !important;
-    text-shadow: inset 7px 0 0 #ffffff
+    text-shadow: inset 7px 0 0 #ffffff !important;
 }
 input:checked+.sliderSml {
     background-color: transparent !important;
