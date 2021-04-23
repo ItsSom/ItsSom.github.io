@@ -1,4 +1,4 @@
-/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation and the spectate text thing and AcidEyezZz#0007 for the shop animation */
+/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation, rainbowtext, top right counters and the spectate text thing & AcidEyezZz#0007 for the shop animation */
 
 @font-face {
     font-family: gamefont;
@@ -12,7 +12,10 @@
 
 * {
     text-shadow: 1px black; 
+    text-transform: lowercase !important;
 }
+.rainbowText{background-image: linear-gradient(to right, #2e62ff, #0099ff , #00ff00, #ffde3b, #ff3399, #6666ff);animation: gradient-border 2s linear infinite;background-size: 400% 100%;color: transparent !important;-webkit-background-clip: text;}
+@keyframes gradient-border{0%, 200% {background-position: 0 0;}99.999999999999999% {background-position: -130% 0;}} 
 
 #aContainer, #aHolder, #endAContainer, #aMerger {
     display: none!important;
@@ -260,4 +263,28 @@ input:checked+.sliderSml {
 .sliderSml {
     opacity: 1;
     background-color: transparent;
+}
+
+#streakCount {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    background-color: transparent;
+    transform: translate(-50%);
+}
+
+.countIcon {
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 32px;
+}
+
+#killsIcon, #deathsIcon, #streakIcon, #kdIcon {
+    width: 28px;
+    height: 28px;
+}
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
+    color: #fff;
 }
