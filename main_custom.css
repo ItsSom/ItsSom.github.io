@@ -10,10 +10,6 @@
 	src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2);
 }
 
-* {
-	text-transform: lowercase !important;
-}
-
 .rainbowText {
 	background-image: linear-gradient(to right, #2e62ff, #0099ff, #00ff00, #ffde3b, #ff3399, #6666ff);
 	animation: gradient-border 2s linear infinite;
@@ -97,7 +93,7 @@
 #pingText {
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: none;
+	text-shadow: 2px 2px 4px #fff;
 	color: #000000;
 }
 
@@ -105,13 +101,13 @@
 	content: ' ms';
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: none;
+	text-shadow: 2px 2px 4px #fff;
 	color: #8d8d8d;
 }
 
 #ingameFPS {
 	letter-spacing: 1px;
-	text-shadow: none;
+	text-shadow: 2px 2px 4px #000;
 	color: #ffffff !important;
 	visibility: visible!important;
 }
@@ -120,7 +116,7 @@
 	content: ' fps';
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: none;
+	text-shadow: 2px 2px 4px #fff;
 	color: #8d8d8d;
 }
 
@@ -231,6 +227,16 @@
 
 #chatInput::placeholder {
 	color: white !important;
+	text-shadow: 2px 2px 4px #000;
+}
+
+#chatInput {
+    visibility:hidden;
+    transition-duration:.25s;
+}
+
+#chatInput:focus {
+    visibility:visible;
 }
 
 #bubbleContainer {
@@ -344,14 +350,14 @@ input:checked+.sliderCent:before {
 	background-color: transparent;
 	text-align: center;
 	transition-duration: 0.25s;
-	text-shadow: inset 7px 0 0 #000000 !important;
+	text-shadow: 2px 2px 4px #000;
 }
 
 input:checked+.sliderSml::before {
 	content: "Spectating";
 	transform: translateX(-12px);
 	color: black !important;
-	text-shadow: inset 7px 0 0 #ffffff !important;
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
 input:checked+.sliderSml {
@@ -376,3 +382,10 @@ input:checked+.sliderSml {
 #healthVal {
 	text-shadow: 2px 2px 4px #000 !important;
 }
+
+.endCard {
+	background-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+
+
