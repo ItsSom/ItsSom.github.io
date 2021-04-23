@@ -221,13 +221,26 @@
 	display: none !important;
 }
 
-#chatInput {
-	background-color: transparent !important;
-}
-
 #chatInput::placeholder {
 	color: white !important;
 	text-shadow: 2px 2px 4px #000;
+}
+
+#chatInput {
+    color: #fff;
+	background-color: transparent !important;
+    border-radius: 0px;
+    transform: scale(0);
+    height: 0;
+    padding: 0;
+    transition-duration: 0.25s;
+    font-size: 16px;
+}
+
+#chatInput:focus {
+    height: 100%;
+    padding: 8px 16px;
+    transform: scale(1);
 }
 
 #bubbleContainer {
