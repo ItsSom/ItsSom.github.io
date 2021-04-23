@@ -1,4 +1,4 @@
-/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation and the spectate text thing) */
+/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation and the spectate text thing and AcidEyezZz#0007 for the shop animation */
 
 @font-face {
     font-family: gamefont;
@@ -13,6 +13,7 @@
 * {
     text-shadow: 1px black; 
 }
+
 #aContainer, #aHolder, #endAContainer, #aMerger {
     display: none!important;
 }
@@ -75,10 +76,10 @@
 }
 
 #pingDisplay .material-icons {
-    display: none!important;
+    display: none !important;
 }
 #fpsDisplay {
-    visibility: hidden!important;
+    visibility: hidden !important;
 }
 #timerIcon, #ammoIcon, #challIcon {
     display: none !important;
@@ -113,19 +114,16 @@
     bottom: 0;
     right: 0;
 }
-
 .weapIcon {
     filter: brightness(100) drop-shadow(-2px 0px 1px rgb(0, 0, 0)) drop-shadow(0px 0px 1px rgb(0, 0, 0)) drop-shadow(2px 0px 1px #000);
     opacity: 0 !important;
     transition-duration: 0.25s;
     height: 0;
 }
-
 .weapIcon[style*="1"] {
     opacity: 1 !important;
     height: 70px;
 }
-
 #weapIconMel {
     margin: 0 !important;
 }
@@ -143,7 +141,6 @@
     transform: scale(0.5) !important;
     margin-top: 5% !important;
     transform: rotate(-10deg) !important;
-
 }
 ::-webkit-scrollbar {
     display: none !important;
@@ -154,9 +151,6 @@
 #chatInput::placeholder {
     color: white !important;
 }
-.countIcon {
-    background-color: transparent;
-}   
 #bubbleContainer {
     display: none !important;
 }
@@ -197,19 +191,19 @@ input:checked+.sliderCent:before {
     transform: translateX(3px) translateY(-12px) scale(1.5);
     background-color: transparent !Important
 }
-.shopCard{
+.shopCard {
     transition: font-size 0.25s ease; 
     text-align: start; 
     font-size: 0px;
     border-radius: 9px;
 }
-.shopCard:hover{
+.shopCard:hover {
      font-size: 22px;
 }
-.shopCard:hover .spinVal{
+.shopCard:hover .spinVal {
      font-size: 18px;
 }
-.spinVal{
+.spinVal {
      text-align: start;
      font-size: 0px;
      background: transparent;
