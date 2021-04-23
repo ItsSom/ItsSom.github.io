@@ -1,4 +1,4 @@
-/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation, rainbowtext, top right counters and the spectate text thing & AcidEyezZz#0007 for the shop animation */
+/* credit to Tae (taekr.carrd.co) for the weapon icon switch animation, rainbowtext and the spectate text thing & AcidEyezZz#0007 for the shop animation */
 
 @font-face {
     font-family: gamefont;
@@ -263,14 +263,6 @@ input:checked+.sliderSml {
 .sliderSml {
     opacity: 1;
     background-color: transparent;
-}
-
-#streakCount {
-    position: fixed;
-    left: 50%;
-    bottom: 10%;
-    background-color: transparent;
-    transform: translate(-50%);
 }
 
 .countIcon {
