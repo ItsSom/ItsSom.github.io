@@ -270,11 +270,3 @@ input:checked+.sliderSml {
     text-shadow: 2px 2px 4px #000;
     font-size: 32px;
 }
-#killsIcon, #deathsIcon, #streakIcon, #kdIcon {
-    width: 28px;
-    height: 28px;
-}
-
-#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
-    color: #fff;
-}
