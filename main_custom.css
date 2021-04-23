@@ -230,15 +230,6 @@
 	text-shadow: 2px 2px 4px #000;
 }
 
-#chatInput {
-    visibility:hidden;
-    transition-duration:.25s;
-}
-
-#chatInput:focus {
-    visibility:visible;
-}
-
 #bubbleContainer {
 	display: none !important;
 }
@@ -335,6 +326,8 @@ input:checked+.sliderCent:before {
 	margin: 0;
 	position: absolute;
 	width: 100%;
+	margin-left: 950px;
+	margin-top: 550px;
 }
 
 .sliderSml {
