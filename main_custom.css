@@ -96,7 +96,7 @@
 #pingText {
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: 2px 2px 4px #fff;
+	text-shadow: none;
 	color: #000000;
 }
 
@@ -104,7 +104,7 @@
 	content: ' ms';
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+	text-shadow: none;
 	color: #8d8d8d;
 }
 
