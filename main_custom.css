@@ -96,8 +96,8 @@
 #pingText {
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: none;
-	color: #000000;
+	text-shadow: 2px 2px 4px #000;
+	color: #ffffff;
 }
 
 #pingText::after {
