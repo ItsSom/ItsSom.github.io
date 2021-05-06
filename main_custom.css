@@ -47,9 +47,11 @@
 .downloadClient,
 #voiceDisplay,
 #newsHolder,
-#termsInfo,
-#faceItIconM {
+#termsInfo {
 	display: none !important;
+}
+#faceItIconM {
+    display: none !important;
 }
 
 #mapInfo {
