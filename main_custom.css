@@ -19,10 +19,12 @@
 }
 
 @keyframes gradient-border {
+
 	0%,
 	200% {
 		background-position: 0 0;
 	}
+
 	99.999999999999999% {
 		background-position: -130% 0;
 	}
@@ -32,7 +34,7 @@
 #aHolder,
 #endAContainer,
 #aMerger {
-	display: none!important;
+	display: none !important;
 }
 
 #youNewDiv,
@@ -47,6 +49,9 @@
 #newsHolder,
 #termsInfo {
 	display: none !important;
+}
+#faceItIconM {
+    display: none !important;
 }
 
 #mapInfo {
@@ -112,14 +117,14 @@
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 4px #000;
 	color: #ffffff !important;
-	visibility: visible!important;
+	visibility: visible !important;
 }
 
 #ingameFPS::after {
 	content: ' fps';
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-shadow: none !important;	
+	text-shadow: none !important;
 	color: #8d8d8d;
 }
 
@@ -263,7 +268,7 @@
 	width: 13px;
 	left: 5px;
 	bottom: 2px;
-	background-color: transparent!Important;
+	background-color: transparent !Important;
 	color: #fff;
 	-webkit-transition: .2s;
 	transition: .2s;
@@ -312,62 +317,62 @@ input:checked+.sliderCent:before {
 }
 
 #uiBase.onMenu #spectButton {
-    width: 48px;
-    top: unset;
-    bottom: 20px;
-    right: calc(50% - 50px);
-    left: unset;
+	width: 48px;
+	top: unset;
+	bottom: 20px;
+	right: calc(50% - 50px);
+	left: unset;
 }
 
 #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
-    color: transparent !important;
+	color: transparent !important;
 }
 
 #spectButton .switchsml {
-    margin: 0;
-    position: absolute;
-    width: 100%;
+	margin: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .sliderSml {
-    opacity: 1;
+	opacity: 1;
 }
 
 .sliderSml::before {
-    content: "Spectate";
-    font-size: 20px;
-    color: white;
-    width: max-content;
-    height: auto;
-    background-color: transparent;
-    text-align: center;
-    transition-duration: 0.25s;
+	content: "Spectate";
+	font-size: 20px;
+	color: white;
+	width: max-content;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	transition-duration: 0.25s;
 }
 
 .sliderSml::before {
-    content: "visibility_off";
-    font-size: 32px;
-    color: white;
-    width: max-content;
-    height: auto;
-    background-color: transparent;
-    text-align: center;
-    transition-duration: 0.25s;
-    font-family: 'Material Icons';
+	content: "visibility_off";
+	font-size: 32px;
+	color: white;
+	width: max-content;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	transition-duration: 0.25s;
+	font-family: 'Material Icons';
 }
 
 input:checked+.sliderSml::before {
-    content: "visibility";
-    transform: unset;
+	content: "visibility";
+	transform: unset;
 }
 
 input:checked+.sliderSml {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .sliderSml {
-    opacity: 1;
-    background-color: transparent;
+	opacity: 1;
+	background-color: transparent;
 }
 
 .countIcon {
@@ -387,6 +392,3 @@ input:checked+.sliderSml {
 .endCard {
 	background-color: rgba(255, 255, 255, 0.089) !important;
 }
-
-
-
