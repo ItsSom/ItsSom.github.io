@@ -65,7 +65,7 @@
 	color: rgb(255, 255, 255) !important;
 	text-shadow: rgb(0, 0, 0) !important;
 	background-color: transparent !important;
-	box-shadow: inset 0 0 7px rgba(128, 128, 128, 0.384) !important;
+	box-shadow: inset 0 0 7px rgb(0 0 0 / 24%) !important;
 }
 
 .button:hover {
@@ -74,6 +74,99 @@
 	background-color: #6d6d6d13 !important;
 	box-shadow: inset 0 0 7px rgb(0, 0, 0) !important;
 	border-radius: 2px !important;
+}
+
+#policeButton {
+	bottom: -40%;
+	right: -50px !important;
+}
+
+#menuBtnRanked,
+#menuBtnHost,
+#menuBtnBrowser,
+#inviteButton,
+#menuBtnJoin {
+	top: 50px !important;
+}
+
+#menuClassContainer {
+	transform: unset;
+}
+
+#menuClassNameTag {
+	display: none;
+}
+
+#bubbleContainer {
+	display: none;
+}
+
+#menuClassName,
+#menuClassSubtext {
+	text-shadow: none;
+}
+
+#menuClassName {
+	font-size: 28px;
+}
+
+#menuClassSubtext {
+	color: white !important;
+}
+
+#customizeButton {
+	width: 300px;
+	height: 300px;
+	position: fixed;
+	right: 80px;
+	bottom: 50%;
+	transform: translateY(75%);
+	font-size: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+#customizeButton .material-icons {
+	display: none;
+}
+
+
+#menuClassName {
+	display: none
+}
+
+#menuClassSubtext {
+	margin-bottom: 120px;
+	transform: translateY(140px);
+	opacity: 0;
+	font-size: 22px;
+	transition: all 0.4s !Important;
+}
+
+#classPreviewCanvas {
+	opacity: 0;
+	transition: all 400ms !Important;
+}
+
+#menuClassContainer:hover>#classPreviewCanvas {
+	opacity: 1;
+}
+
+#menuClassContainer:hover>#menuClassSubtext {
+	opacity: 1;
+}
+
+#menuClassContainer:before {
+	content: 'Customize';
+	display: block;
+	font-size: 24px;
+	color: white !important;
+	transform: translateY(390px);
+	transition: all 100ms !Important;
+}
+
+#menuClassContainer:hover:before {
+	color: #fff !important;
 }
 
 .menuItem {
@@ -87,6 +180,26 @@
 	box-shadow: inset 0 0 7px rgb(0, 0, 0) !important;
 	border-left: none;
 	border-radius: 2px !important;
+}
+
+.settName,
+.settNameSmall,
+.setHed,
+.setBodH,
+#hostActionH,
+.mFeatSepar {
+	border: hidden !important;
+	background: transparent !important;
+}
+
+.sliderVal,
+.selectorItem,
+.chalCard {
+	border: hidden !important;
+}
+
+#menuWindowHider div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"] {
+	display: none !important
 }
 
 .iconProfile,
@@ -155,6 +268,14 @@
 	right: -1% !important;
 }
 
+#timerVal {
+	text-shadow: 2px 2px 4px #000 !important;
+}
+
+#timerDisplay {
+	background-color: transparent !important;
+}
+
 #healthBar {
 	width: 325px;
 	display: inline-flex;
@@ -176,6 +297,7 @@
 #hudClassIcon {
 	width: 75px !important;
 	height: 75px !important;
+	background-color: #ffffff1a !important;
 }
 
 .weapItem {
@@ -204,6 +326,10 @@
 	display: none;
 }
 
+#weapDisplay {
+	bottom: 7% !important;
+}
+
 #chatHolder {
 	transition: all 0.4s cubic-bezier(0.43, 0.32, 0.35, 1.32);
 }
@@ -221,12 +347,13 @@
 
 #mainLogo {
 	content: url(https://cdn.discordapp.com/attachments/756798771160940597/834062549535817778/assssssssssss.png) !important;
-	transform: scale(0.25) !important;
-	margin-top: 5% !important;
-	transform: rotate(-10deg) !important;
+	height: 100px !important;
+	margin-top: 40% !important;
+	transform: rotate(-5deg) !important;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+#chatSwitch:after {
 	display: none !important;
 }
 
@@ -235,8 +362,12 @@
 	text-shadow: 2px 2px 4px #000;
 }
 
-#chatInput {
+#chatInput,
+#chatInputHolder,
+#chatList {
 	background-color: transparent !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
 }
 
 #bubbleContainer {
@@ -311,6 +442,7 @@ input:checked+.sliderCent:before {
 
 #loadingBg {
 	background-image: url(https://cdn.discordapp.com/attachments/795732173667303447/834686393183764486/loading-opaque.gif);
+	opacity: 75% !important;
 }
 
 #uiBase.onMenu #instructions {
@@ -392,4 +524,192 @@ input:checked+.sliderSml {
 
 .endCard {
 	background-color: rgba(255, 255, 255, 0.089) !important;
+}
+
+
+input:checked+.slider:after {
+	visibility: visible;
+	font-family: 'Material-Icons';
+	content: 'check_box';
+	font-size: 40px;
+	position: relative;
+	left: -7px;
+	color: #fff;
+}
+
+.slider {
+	width: 28px !important;
+	height: 28px !important;
+	left: 16px;
+	border-radius: 12px;
+	transition: .2s !important;
+}
+
+.slider {
+	visibility: hidden;
+}
+
+.slider:before {
+	display: none !important;
+}
+
+.slider::after {
+	visibility: visible;
+	font-family: 'Material-Icons';
+	content: 'indeterminate_check_box';
+	font-size: 40px;
+	position: relative;
+	left: -7px;
+	color: #000;
+}
+
+
+@font-face {
+	font-family: 'material icons';
+	src: url(https://fonts.gstatic.com/s/materialicons/v59/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2);
+}
+
+.iconProfile {
+	visibility: hidden;
+}
+
+.iconProfile:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'manage_accounts';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconShop {
+	visibility: hidden;
+}
+
+.iconShop:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'storefront';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconChall {
+	visibility: hidden;
+}
+
+.iconChall:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'tour';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconSocial {
+	visibility: hidden;
+}
+
+.iconSocial:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'language';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconGames {
+	visibility: hidden;
+}
+
+.iconGames:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'casino';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconMods {
+	visibility: hidden;
+}
+
+.iconMods:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'mode';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.iconSettings {
+	visibility: hidden;
+}
+
+.iconSettings:after {
+	visibility: visible;
+	font-family: 'material icons';
+	content: 'settings_suggest';
+	font-size: 50px;
+	border-bottom: 2px solid wheat;
+}
+
+.menuItemTitle {
+	font-size: 13px !important;
+	transition: all 0.25s ease;
+	color: #b6b6b6 !important;
+}
+
+#menuWindow,
+.settingsHeader,
+.serverHeader,
+#menuWindow.dark,
+.bigMenTab,
+#selectorContainer,
+.settingTab,
+#menuWindow.dark div,
+#instructionsUpdate {
+	background-color: transparent !important;
+}
+
+#settSearch,
+.inputGrey2,
+.quickJoin {
+	background-color: white;
+	color: black !important;
+}
+
+.settLabel.blackShad,
+.menuLink {
+	color: white !important;
+}
+
+#selectorContainer,
+.selectorItem {
+	background-color: transparent !important;
+	filter: drop-shadow(0 0 0.15rem #a4a4a4);
+}
+
+input:checked+.optCheck {
+	background-color: black !important;
+}
+
+.accountInput {
+	background-color: black !important;
+}
+
+#leaderDisplay {
+	background-color: transparent !important;
+}
+
+
+#curGameInfo,
+.leaderScore,
+.leaderNameM,
+.leaderNameF,
+.leaderCounter {
+	text-shadow: 2px 2px 4px #000 !important;
+}
+
+.tabHeader.selected {
+	color: grey !important;
 }
