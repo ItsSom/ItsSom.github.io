@@ -367,7 +367,7 @@
 #chatList {
 	background-color: transparent !important;
 	box-shadow: none !important;
-	text-shadow: none !important;
+	border: none !important;
 }
 
 #bubbleContainer {
@@ -713,3 +713,4 @@ input:checked+.optCheck {
 .tabHeader.selected {
 	color: grey !important;
 }
+
