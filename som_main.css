@@ -1,13 +1,5 @@
-/* root, fonts, etc. */
+/* fonts, etc. */
 
-:root {
-    --text: rgb(255, 234, 253);
-    --accent: #000;
-    --menu-bg: rgba(175, 175, 175, 0.07);
-    --hp-ammo: rgb(255, 255, 255);
-    --premium: rgb(255, 167, 243);
-    --verification: rgb(255, 167, 243);
-}
 
 @font-face {
     font-family: gamefont;
