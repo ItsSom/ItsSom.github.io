@@ -592,6 +592,7 @@ input:checked+.optCheck {
 #streakIcon {
     height: 30px !important;
     width: 30px !important;
+    box-shadow: 2px 2px 4px #000;
 }
 
 
