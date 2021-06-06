@@ -796,9 +796,9 @@ input:checked+.optCheck {
 }
 
 #leaderContainer i[style*="color:#FBC02D"] {
-    color: var(--premium-color) !important;
+    color: var(--premium) !important;
 }
 
 #leaderContainer i[style*="color:#40C4FF"] {
-    color: var(--verified-color) !important;
+    color: var(--verification) !important;
 }
