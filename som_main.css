@@ -247,10 +247,6 @@
 
 #chatHolder {
     transition: all 0.525s cubic-bezier(0.43, 0.32, 0.35, 1.32);
-    transform: translate(-50%, -50%);
-    position: fixed;
-    bottom: -3% !important;
-    left: 12% !important;
 }
 
 #chatInput {
