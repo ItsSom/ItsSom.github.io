@@ -247,10 +247,22 @@
 
 #chatHolder {
     transition: all 0.525s cubic-bezier(0.43, 0.32, 0.35, 1.32);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 150px;
 }
 
 #chatInput {
     margin-left: -22%;
+}
+
+#uiBase.onCompMenu #chatHolder {
+    left: 20px;
+    bottom: 150px !important;
 }
 
 
