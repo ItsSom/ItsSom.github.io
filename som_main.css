@@ -790,7 +790,7 @@ input:checked+.optCheck {
     position: fixed;
     right: unset;
     left: 100px;
-    bottom: 100px !important;
+    bottom: 10px !important;
     transition-duration: 1s !important;
 }
 
